@@ -14,7 +14,6 @@ namespace Pokemon
 
         public Game1()
         {
-            /// TEST
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
         }

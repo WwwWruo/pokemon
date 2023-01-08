@@ -16,6 +16,26 @@ namespace Pokemon
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+
+         
+            type water = new type();
+            type rock = new type();
+            //pokemon
+            {
+                pokemon tyranitar = new pokemon();
+                tyranitar.hp = 100;
+                tyranitar.atk = 134;
+                tyranitar.df = 110;
+                tyranitar.spa = 95;
+                tyranitar.spd = 100;
+                tyranitar.spe = 61;
+                tyranitar.type = rock;
+
+
+
+
+            }
+
         }
 
         /// <summary>
@@ -79,5 +99,28 @@ namespace Pokemon
 
             base.Draw(gameTime);
         }
+    }
+
+    public class type
+    {
+        public int nr;
+    }
+    public class pokemon
+    {
+       public string type, type2;
+       public int hp, atk, df, spe, spa, spd;
+       public bool effekt;
+
+
+    }
+    public class attack
+    {
+       public int power;
+       public string effekt, spph;
+
+    }
+    public class scene
+    {
+
     }
 }
